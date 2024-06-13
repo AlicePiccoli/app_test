@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628756746296",
+    "project_id": "instagrume-ad695",
+    "storage_bucket": "instagrume-ad695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628756746296:android:bb72f6abea3318418d16cd",
+        "android_client_info": {
+          "package_name": "com.example.instagrume"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvJ5kGedONIfZ8Z2Osqcvohu8Wyarg0rY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
