@@ -55,6 +55,14 @@ class _RegisterPageState extends State<RegisterPage> {
         _emailController.text.trim(),
         imageUrl!,
       );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+              "Les mots de passe ne sont pas identiques ou ils font moins de 6 caractères"),
+        ),
+      );
+      return;
     }
   }
 
@@ -70,7 +78,8 @@ class _RegisterPageState extends State<RegisterPage> {
 
   bool passwordConfirmed() {
     if (_passwordController.text.trim() ==
-        _confirmPasswordController.text.trim()) {
+            _confirmPasswordController.text.trim() &&
+        _passwordController.text.trim().length >= 6) {
       return true;
     } else {
       return false;
